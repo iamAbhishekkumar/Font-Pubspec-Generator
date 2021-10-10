@@ -15,9 +15,9 @@ def dir_path(string):
 
 
 def gen_helper_dart(name):
-    name = name[0].lower() + name[1:]
-    name = name.replace("-","")
-    return f'static final {name} = "{name}";\n'
+    var_name = name[0].lower() + name[1:]
+    var_name = var_name.replace("-","")
+    return f'static final {var_name} = "{name}";\n'
 
 
 def main(path):
